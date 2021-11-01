@@ -4,7 +4,16 @@
 List of Projects
 
 **Chapter #28: File IO**
-- 
+- FileStream
+- StreamReader & StreamWriter
+- BinaryReader & BinaryWriter
+- DirectoryInfo & FileInfo
 
 **Chapter #35: Collections**
--  
+- ArrayList
+- HashTable
+- SortedList
+- Stack
+- Queue
+- BitArray
+  

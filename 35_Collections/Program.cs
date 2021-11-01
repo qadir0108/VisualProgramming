@@ -10,8 +10,8 @@ namespace _35_Collections
     {
         static void Main(string[] args)
         {
-            //ExampleArrayList exampleArrayList = new ExampleArrayList();
-            //exampleArrayList.Run();
+            ExampleArrayList exampleArrayList = new ExampleArrayList();
+            exampleArrayList.Run();
 
             //ExampleHashtable exampleHashtable = new ExampleHashtable();
             //exampleHashtable.Run();
@@ -25,8 +25,8 @@ namespace _35_Collections
             //ExampleQueue exampleQueue = new ExampleQueue();
             //exampleQueue.Run();
 
-            ExampleBitArray exampleBitArray = new ExampleBitArray();
-            exampleBitArray.Run();
+            //ExampleBitArray exampleBitArray = new ExampleBitArray();
+            //exampleBitArray.Run();
         }
     }
 }
