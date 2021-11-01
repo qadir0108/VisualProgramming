@@ -7,7 +7,7 @@
     <ProjectGuid>{9FA8810B-1BE3-4784-819F-4CB5E8E165CE}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>FileIO</RootNamespace>
-    <AssemblyName>FileIO</AssemblyName>
+    <AssemblyName>28_FileIO</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
