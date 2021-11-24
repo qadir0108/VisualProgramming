@@ -16,4 +16,13 @@ List of Projects
 - Stack
 - Queue
 - BitArray
+
+**Chapter #36: Generics**
+- Generic Class
+- Generic Function
   
+**Chapter #39: Threading**
+- MainThread
+- Creating Thread (aka. Thread Spawning)
+- Managing Thread
+- Destroying Thread
