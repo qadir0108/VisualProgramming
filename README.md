@@ -9,6 +9,11 @@ List of Projects
 - BinaryReader & BinaryWriter
 - DirectoryInfo & FileInfo
 
+**Chapter #33: Delegates**
+- Delegate
+- Delegate Multicast
+- Delegate Usage
+
 **Chapter #35: Collections**
 - ArrayList
 - HashTable
