@@ -13,6 +13,7 @@ List of Projects
 - Delegate
 - Delegate Multicast
 - Delegate Usage
+- System Timer
 
 **Chapter #35: Collections**
 - ArrayList

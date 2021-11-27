@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExampleTimer.cs" />
     <Compile Include="ExampleDelegateUsage.cs" />
     <Compile Include="ExampleMulticastDelegate.cs" />
     <Compile Include="ExampleDelegate.cs" />

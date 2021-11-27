@@ -16,8 +16,11 @@ namespace _33_Delegates
             //ExampleMulticastDelegate exampleMulticastDelegate = new ExampleMulticastDelegate();
             //exampleMulticastDelegate.Run();
 
-            ExampleDelegateUsage exampleDelegateUsage = new ExampleDelegateUsage();
-            exampleDelegateUsage.Run();
+            //ExampleDelegateUsage exampleDelegateUsage = new ExampleDelegateUsage();
+            //exampleDelegateUsage.Run();
+
+            ExampleTimer exampleTimer = new ExampleTimer();
+            exampleTimer.Run();
         }
     }
 }
