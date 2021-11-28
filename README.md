@@ -15,6 +15,11 @@ List of Projects
 - Delegate Usage
 - System Timer
 
+**Chapter #33: Events**
+- Delegate & Event
+- Windows Form EventHandler
+- Winforms App First
+
 **Chapter #35: Collections**
 - ArrayList
 - HashTable
