@@ -26,6 +26,9 @@ namespace ConsoleAppFirst
 
             //ExampleEnum example = new ExampleEnum();
             //example.Run();
+
+            //ExampleExceptions exampleExceptions = new ExampleExceptions();
+            //exampleExceptions.Run();
         }
     }
 }

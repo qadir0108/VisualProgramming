@@ -7,6 +7,7 @@
 - Data Type Conversion
 - Nullable Data Type 
 - Enumeration 
+- Exception Handling 
 
 **Chapter #20: Inheritance**
 - Parent Child Class (Shape & Rectangle) 
