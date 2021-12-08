@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfAppFirst.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppFirst"
+        mc:Ignorable="d"
+        Title="Information System - Login" Height="248" Width="416" ResizeMode="NoResize">
+    <Grid>
+        <Label x:Name="lblUserName" Content="User Name:" HorizontalAlignment="Left" Margin="72,36,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtUserName" HorizontalAlignment="Left" Margin="184,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblPassword" Content="Password:" HorizontalAlignment="Left" Margin="77,83,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="184,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblMessage" Content="-" HorizontalAlignment="Left" Margin="48,143,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnLogin" HorizontalAlignment="Left" Content="Login" Height="30" Width="100" Click="btnLogin_Click" Margin="266,156,0,26"/>
+
+    </Grid>
+</Window>
