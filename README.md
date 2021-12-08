@@ -9,6 +9,10 @@
 - Enumeration 
 - Exception Handling 
 
+**Chapter #16: Strings**
+- Creating String 
+- String Compare, Contains, Substring, Join
+
 **Chapter #20: Inheritance**
 - Parent Child Class (Shape & Rectangle) 
 - Initilize Parent class (Constructor & Function)
