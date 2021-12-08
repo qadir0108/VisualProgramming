@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _16_Strings
 {
-    public class ExampleSubString
+    public class ExampleSubstring
     {
         public void Run()
         {

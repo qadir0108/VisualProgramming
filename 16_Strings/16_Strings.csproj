@@ -47,7 +47,7 @@
     <Compile Include="ExampleContains.cs" />
     <Compile Include="ExampleCreate.cs" />
     <Compile Include="ExampleJoin.cs" />
-    <Compile Include="ExampleSubString.cs" />
+    <Compile Include="ExampleSubstring.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
