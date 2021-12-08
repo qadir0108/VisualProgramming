@@ -3,6 +3,11 @@
 
 List of Projects
 
+**Chapter #20: Inheritance**
+- Parent Child Class (Shape & Rectangle) 
+- Initilize Parent class (Constructor & Function)
+- Multiple Inheritance using Interfaces
+
 **Chapter #28: File IO**
 - FileStream
 - StreamReader & StreamWriter
