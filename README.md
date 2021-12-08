@@ -2,6 +2,11 @@
  For students to understand Visual Programming in C#
 
 List of Projects
+**Console App First**
+- Hello World
+- Classes
+- Data Type Conversion
+- Nullable Data Type 
 
 **Chapter #20: Inheritance**
 - Parent Child Class (Shape & Rectangle) 
