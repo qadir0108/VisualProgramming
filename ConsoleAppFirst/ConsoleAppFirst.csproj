@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ExampleClass.cs" />
+    <Compile Include="ExampleEnum.cs" />
     <Compile Include="ExampleNullable.cs" />
     <Compile Include="ExampleTypeConversion.cs" />
     <Compile Include="Program.cs" />

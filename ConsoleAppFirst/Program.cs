@@ -23,6 +23,9 @@ namespace ConsoleAppFirst
             //ExampleNullable obj3 = new ExampleNullable();
             //obj3.Run();
             //obj3.Run2();
+
+            //ExampleEnum example = new ExampleEnum();
+            //example.Run();
         }
     }
 }

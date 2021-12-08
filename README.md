@@ -6,6 +6,7 @@
 - Classes
 - Data Type Conversion
 - Nullable Data Type 
+- Enumeration 
 
 **Chapter #20: Inheritance**
 - Parent Child Class (Shape & Rectangle) 
