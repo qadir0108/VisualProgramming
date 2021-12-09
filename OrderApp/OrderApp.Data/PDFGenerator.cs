@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace OrderApp.Data
 {
-    public class PDFGenerator
+    public class PdfGenerator
     {
         public void Generate(Order order)
         {

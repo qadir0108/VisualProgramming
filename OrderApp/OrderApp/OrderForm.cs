@@ -81,7 +81,7 @@ namespace OrderApp
 
         private void btnPrint_Click(object sender, EventArgs e)
         {
-            new PDFGenerator().Generate(Order);
+            new PdfGenerator().Generate(Order);
         }
     }
 }
