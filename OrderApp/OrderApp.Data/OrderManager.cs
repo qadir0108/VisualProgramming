@@ -94,6 +94,23 @@ namespace OrderApp.Data
             }
             connection.Close();
         }
-        
+
+        public void DeleteOrder(int orderId)
+        {
+            SqlConnection connection = new SqlConnection(Database.ConnectionString);
+            connection.Open();
+            SqlCommand cmd;
+
+            string sql = "DELETE FROM ORDERITEM WHERE OrderId = " + orderId;
+            cmd = new SqlCommand(sql, connection);
+            int result = cmd.ExecuteNonQuery();
+
+            sql = "DELETE FROM ORDERR WHERE Id = " + orderId;
+            cmd = new SqlCommand(sql, connection);
+            result = cmd.ExecuteNonQuery();
+
+            connection.Close();
+        }
+
     }
 }

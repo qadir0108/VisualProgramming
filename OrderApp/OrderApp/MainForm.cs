@@ -13,9 +13,11 @@ namespace OrderApp
 {
     public partial class MainForm : Form
     {
+        OrderManager orderManager;
         public MainForm()
         {
             InitializeComponent();
+            orderManager = new OrderManager();
         }
 
         private void btnNewOrder_Click(object sender, EventArgs e)
@@ -32,10 +34,28 @@ namespace OrderApp
 
         public void RefreshGridView()
         {
-            OrderManager orderManager = new OrderManager();
             BindingSource bSource = new BindingSource();
             bSource.DataSource = orderManager.GetAllOrders();
             dgvOrders.DataSource = bSource;
+        }
+
+        private void btnDeleteOrder_Click(object sender, EventArgs e)
+        {
+            var selectedRows = dgvOrders.SelectedRows;
+            if (selectedRows == null || selectedRows.Count == 0)
+            {
+                MessageBox.Show("Please select a row to DELETE");
+                return;
+            }
+
+            if (selectedRows[0].Cells[0].Value == null)
+                return;
+
+            int orderId = (int)selectedRows[0].Cells[0].Value;
+            orderManager.DeleteOrder(orderId);
+            MessageBox.Show("Order deleted succefully.");
+            RefreshGridView();
+
         }
     }
 }

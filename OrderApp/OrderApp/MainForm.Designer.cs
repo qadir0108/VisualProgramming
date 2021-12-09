@@ -31,14 +31,15 @@
             this.btnNewOrder = new System.Windows.Forms.Button();
             this.dgvOrders = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnDeleteOrder = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrders)).BeginInit();
             this.SuspendLayout();
             // 
             // btnNewOrder
             // 
-            this.btnNewOrder.Location = new System.Drawing.Point(539, 396);
+            this.btnNewOrder.Location = new System.Drawing.Point(569, 396);
             this.btnNewOrder.Name = "btnNewOrder";
-            this.btnNewOrder.Size = new System.Drawing.Size(95, 23);
+            this.btnNewOrder.Size = new System.Drawing.Size(100, 50);
             this.btnNewOrder.TabIndex = 2;
             this.btnNewOrder.Text = "New Order";
             this.btnNewOrder.UseVisualStyleBackColor = true;
@@ -52,6 +53,7 @@
             this.dgvOrders.ReadOnly = true;
             this.dgvOrders.RowHeadersWidth = 51;
             this.dgvOrders.RowTemplate.Height = 24;
+            this.dgvOrders.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvOrders.Size = new System.Drawing.Size(657, 279);
             this.dgvOrders.TabIndex = 3;
             // 
@@ -66,11 +68,22 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Order App - Orders List";
             // 
+            // btnDeleteOrder
+            // 
+            this.btnDeleteOrder.Location = new System.Drawing.Point(12, 396);
+            this.btnDeleteOrder.Name = "btnDeleteOrder";
+            this.btnDeleteOrder.Size = new System.Drawing.Size(100, 50);
+            this.btnDeleteOrder.TabIndex = 5;
+            this.btnDeleteOrder.Text = "Delete Order";
+            this.btnDeleteOrder.UseVisualStyleBackColor = true;
+            this.btnDeleteOrder.Click += new System.EventHandler(this.btnDeleteOrder_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(681, 458);
+            this.Controls.Add(this.btnDeleteOrder);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvOrders);
             this.Controls.Add(this.btnNewOrder);
@@ -91,6 +104,7 @@
         private System.Windows.Forms.Button btnNewOrder;
         private System.Windows.Forms.DataGridView dgvOrders;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnDeleteOrder;
     }
 }
 

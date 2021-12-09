@@ -40,9 +40,9 @@
             // 
             // btnAddItem
             // 
-            this.btnAddItem.Location = new System.Drawing.Point(43, 341);
+            this.btnAddItem.Location = new System.Drawing.Point(10, 326);
             this.btnAddItem.Name = "btnAddItem";
-            this.btnAddItem.Size = new System.Drawing.Size(75, 23);
+            this.btnAddItem.Size = new System.Drawing.Size(100, 50);
             this.btnAddItem.TabIndex = 7;
             this.btnAddItem.Text = "Add Item";
             this.btnAddItem.UseVisualStyleBackColor = true;
@@ -53,16 +53,18 @@
             this.dgvOrderItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvOrderItems.Location = new System.Drawing.Point(3, 94);
             this.dgvOrderItems.Name = "dgvOrderItems";
+            this.dgvOrderItems.ReadOnly = true;
             this.dgvOrderItems.RowHeadersWidth = 51;
             this.dgvOrderItems.RowTemplate.Height = 24;
+            this.dgvOrderItems.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvOrderItems.Size = new System.Drawing.Size(575, 223);
             this.dgvOrderItems.TabIndex = 6;
             // 
             // btnSaveOrder
             // 
-            this.btnSaveOrder.Location = new System.Drawing.Point(241, 341);
+            this.btnSaveOrder.Location = new System.Drawing.Point(336, 326);
             this.btnSaveOrder.Name = "btnSaveOrder";
-            this.btnSaveOrder.Size = new System.Drawing.Size(95, 23);
+            this.btnSaveOrder.Size = new System.Drawing.Size(100, 50);
             this.btnSaveOrder.TabIndex = 5;
             this.btnSaveOrder.Text = "Save Order";
             this.btnSaveOrder.UseVisualStyleBackColor = true;
@@ -97,9 +99,9 @@
             // 
             // btnPrint
             // 
-            this.btnPrint.Location = new System.Drawing.Point(453, 341);
+            this.btnPrint.Location = new System.Drawing.Point(468, 326);
             this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(75, 23);
+            this.btnPrint.Size = new System.Drawing.Size(100, 50);
             this.btnPrint.TabIndex = 14;
             this.btnPrint.Text = "Print Order";
             this.btnPrint.UseVisualStyleBackColor = true;
