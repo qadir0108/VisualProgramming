@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace OrderApp.Data
 {
-    public class Database
+    public sealed class Database
     {
-        public static string ConnectionString = @"Server=QADIR\SQLEXPRESS;Database=OrderApp;Trusted_Connection=True;";
+        public static readonly string ConnectionString = @"Server=QADIR\SQLEXPRESS;Database=OrderApp;Trusted_Connection=True;";
     }
 }
