@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- The name of the product -->
+<?define Name = "Order App" ?>
+<!-- The Description of the product -->
+<?define Description = "This is Order App, developed to explain Visual Programming concepts to students" ?>
+<!-- The manufacturer, for setup package publisher and folder info -->
+<?define Manufacturer = "BZU" ?>
+<!-- The version number of this setup package-->
+<?define Version = "1.0.0" ?>
+<!-- UpgradeCode must be unique and not changed once the first version of the program is installed. -->
+<?define UpgradeCode = "{25DA3824-3F14-4040-826B-F8D1783E1288}" ?>
+<!-- The name of the Cabinet -->
+<?define CabName = "OrderApp.cab" ?>
+
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:utilExt="http://schemas.microsoft.com/wix/UtilExtension" xmlns:netfx="http://schemas.microsoft.com/wix/NetFxExtension">
+
+  <!--Variable for Sample Application Directory-->
+  <?define ApplicationFolder="..\\OrderApp\\bin\\Debug\\"?>
+
+  <Product Id="*" Name="$(var.Name)" Manufacturer="$(var.Manufacturer)" UpgradeCode="$(var.UpgradeCode)" Version="$(var.Version)" Language="1033">
+
+    <!--Setup or Installer with properties-->
+    <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" Manufacturer="$(var.Manufacturer)" />
+
+    <!--Application logo-->
+    <Icon Id="Logo.ico" SourceFile="$(var.ApplicationFolder)\logo.ico" />
+
+    <!--Application logo for Control Panel-->
+    <Property Id="ARPPRODUCTICON" Value="Logo.ico" />
+
+    <!--Embed Cabinet into single msi file-->
+    <Media Id="1" Cabinet="$(var.CabName)" EmbedCab="yes" />
+
+    <!-- Allow upgrades and prevent downgrades -->
+    <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+
+    <!-- Check if .Net Framework 4.7.2 version is installed or not. If not show message and exit-->
+    <PropertyRef Id="WIX_IS_NETFRAMEWORK_452_OR_LATER_INSTALLED" />
+    <Condition Message="This application requires .NET Framework 4.7.2 Please install the .NET Framework then run this installer again.">
+      <![CDATA[Installed OR WIX_IS_NETFRAMEWORK_452_OR_LATER_INSTALLED]]>
+    </Condition>
+    
+    <!--Main Feature for this Setup which can be found in Fragment Tag with ComponentGroupRef Id-->
+    <Feature Id="ProductFeature" Title="$(var.Name)" Level="1">
+      <!--Main application executable component-->
+      <ComponentGroupRef Id="ProductComponents" />
+      <!--Main application shortcut for Program Menu-->
+      <ComponentRef Id="ApplicationShortcut" />
+      <!--Desktop shortcut-->
+      <ComponentGroupRef Id="ComponentGroupDesktopShortcut" />
+    </Feature>
+
+    <!-- Add CheckBox UI to your installer for running application on exit-->
+    <UI>
+      <!--<UIRef Id="WixUI_Minimal" />-->
+      <Publish Dialog="ExitDialog" Control="Finish" Event="DoAction" Value="LaunchApplication">WIXUI_EXITDIALOGOPTIONALCHECKBOX = 1 and NOT Installed</Publish>
+    </UI>
+    <Property Id="WIXUI_EXITDIALOGOPTIONALCHECKBOXTEXT" Value="Launch $(var.Name)" />
+
+    <!--Include the custom action for running application on exit-->
+    <Property Id="WixShellExecTarget" Value="[#OrderApp.exe]" />
+    <Property Id="WIXUI_EXITDIALOGOPTIONALCHECKBOX" Value="1" />
+    <CustomAction Id="LaunchApplication" BinaryKey="WixCA" DllEntry="WixShellExec" Impersonate="yes" />
+
+    <!--Custom UI for installer-->
+    <Property Id="WIXUI_INSTALLDIR" Value="INSTALLFOLDER" />
+    <UIRef Id="WixUI_InstallDir" />
+    <!--EndUser License aggrement-->
+    <WixVariable Id="WixUILicenseRtf" Overridable="yes" Value="Resources\eula.rtf" />
+    <!--Top Banner UI Logo-->
+    <WixVariable Id="WixUIBannerBmp" Overridable="yes" Value="Resources\TopBanner.jpg" />
+    <!--Verticle Banner UI Logo-->
+    <WixVariable Id="WixUIDialogBmp" Overridable="yes" Value="Resources\BackgroundLogo.jpg" />
+  </Product>
+
+  <!--Fragment with details of installation directory-->
+  <Fragment>
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFilesFolder">
+        <!-- Create a folder inside program files with Company Name-->
+        <Directory Id="ROOTDIRECTORY" Name="$(var.Manufacturer)">
+          <!-- Create a folder inside Company Name folder with Product Name-->
+          <Directory Id="INSTALLFOLDER" Name="$(var.Name)">
+            <Directory Id="DesktopFolder" Name="DesktopFolder" />
+          </Directory>
+        </Directory>
+      </Directory>
+      <!--Create application folder in Program Menu-->
+      <Directory Id="ProgramMenuFolder">
+        <Directory Id="ApplicationProgramsFolder" Name="$(var.Name)" />
+      </Directory>
+    </Directory>
+  </Fragment>
+
+  <!--Main Feature Fragment with Sample application executable-->
+  <Fragment>
+    <!--ComponentGroup refering to install component in INSTALLFOLDER Directory-->
+    <ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER" Source="$(var.ApplicationFolder)" >
+      <!--Main Component with Sample Application executable path-->
+      <Component Id="OrderApp" Guid="*">
+        <File Id="OrderApp" Name="OrderApp.exe"/>
+        <!-- Remove all files from the INSTALLFOLDER on uninstall -->
+        <RemoveFile Id="ALLFILES" Name="*.*" On="both" />
+      </Component>
+      <!--Component with config file of sample application-->
+      <Component Id="OrderApp.config" Guid="*">
+        <File Name="OrderApp.exe.config"/>
+      </Component>
+
+	    <!--All Other DLLs-->
+	    <Component Id="OrderApp.Data">
+		    <File Name="OrderApp.Data.dll"/>
+	    </Component>
+		<Component Id="itext.layout">
+			<File Name="itext.layout.dll"/>
+		</Component>
+		<Component Id="itext.kernel">
+			<File Name="itext.kernel.dll"/>
+		</Component>
+		<Component Id="itext.io">
+			<File Name="itext.io.dll"/>
+		</Component>
+		<Component Id="itext.commons">
+			<File Name="itext.commons.dll"/>
+		</Component>
+		<Component Id="BouncyCastle.Crypto">
+			<File Name="BouncyCastle.Crypto.dll"/>
+		</Component>
+		<Component Id="Microsoft.Extensions.Logging">
+			<File Name="Microsoft.Extensions.Logging.dll"/>
+		</Component>
+		<Component Id="Microsoft.Extensions.Options">
+			<File Name="Microsoft.Extensions.Options.dll"/>
+		</Component>
+		<Component Id="Microsoft.Extensions.DependencyInjection">
+			<File Name="Microsoft.Extensions.DependencyInjection.dll"/>
+		</Component>
+		<Component Id="Microsoft.Extensions.Logging.Abstractions">
+			<File Name="Microsoft.Extensions.Logging.Abstractions.dll"/>
+		</Component>
+		<Component Id="Microsoft.Extensions.Primitives">
+			<File Name="Microsoft.Extensions.Primitives.dll"/>
+		</Component>
+		<Component Id="Microsoft.Extensions.DependencyInjection.Abstractions">
+			<File Name="Microsoft.Extensions.DependencyInjection.Abstractions.dll"/>
+		</Component>
+		<Component Id="System.Runtime.CompilerServices.Unsafe">
+			<File Name="System.Runtime.CompilerServices.Unsafe.dll"/>
+		</Component>
+		<Component Id="Microsoft.Bcl.AsyncInterfaces">
+			<File Name="Microsoft.Bcl.AsyncInterfaces.dll"/>
+		</Component>
+		<Component Id="System.Diagnostics.DiagnosticSource">
+			<File Name="System.Diagnostics.DiagnosticSource.dll"/>
+		</Component>
+		<Component Id="System.Buffers">
+			<File Name="System.Buffers.dll"/>
+		</Component>
+		<Component Id="System.Memory">
+			<File Name="System.Memory.dll"/>
+		</Component>
+		<Component Id="System.Threading.Tasks.Extensions">
+			<File Name="System.Threading.Tasks.Extensions.dll"/>
+		</Component>
+		<Component Id="System.ValueTuple">
+			<File Name="System.ValueTuple.dll"/>
+		</Component>
+		<Component Id="System.Numerics.Vectors">
+			<File Name="System.Numerics.Vectors.dll"/>
+		</Component>
+    </ComponentGroup>
+  </Fragment>
+
+    <Fragment>
+    <DirectoryRef Id="ApplicationProgramsFolder">
+        <!--Create application shortcut in Program Menu-->
+        <Component Id="ApplicationShortcut" Guid="*">
+        <Shortcut Id="ApplicationStartMenuShortcut" Name="$(var.Name)" Description="$(var.Description)" Icon="Logo.ico" Target="[#OrderApp.exe]" WorkingDirectory="INSTALLFOLDER" />
+        <!--Remove application shortcut from Program Menu on uninstall-->
+        <RemoveFolder Id="ApplicationProgramsFolder" On="uninstall" />
+        <!--Create application registry entry-->
+        <RegistryValue Root="HKCU" Key="Software\Microsoft\$(var.Manufacturer)\$(var.Name)" Name="installed" Type="integer" Value="1" KeyPath="yes" />
+        </Component>
+    </DirectoryRef>
+    </Fragment>
+
+  <Fragment>
+    <!--Desktop Shortcut-->
+    <ComponentGroup Id="ComponentGroupDesktopShortcut">
+      <Component Id="ComponentDesktopShortcut" Guid="*" Directory="DesktopFolder" >
+        <Shortcut Id="AppDesktopShortcut"
+                  Name="$(var.Name)"
+                  Description="$(var.Description)"
+                  Directory="DesktopFolder"
+                  Target="[#OrderApp.exe]"
+                  WorkingDirectory="INSTALLFOLDER"/>
+        <!--Remove desktop shortcut on uninstall-->
+        <RemoveFolder Id="DesktopFolder" On="uninstall"/>
+        <RegistryValue Root="HKCU" Key="Software\$(var.Manufacturer)\$(var.Name)" Name="installed" Type="integer" Value="1" KeyPath="yes" />
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>
