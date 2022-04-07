@@ -23,6 +23,10 @@
 - Abstract Class
 - Polymorphism
 
+**Chapter #23: Interfaces**
+- Transaction : ITransaction Example 
+- Goat : IAnimal Example
+
 **Chapter #28: File IO**
 - FileStream
 - StreamReader & StreamWriter
