@@ -16,9 +16,6 @@ namespace OrderApp
         OrderManager orderManager;
         public MainForm()
         {
-            ObserverPattern observer = new ObserverPattern();
-            observer.Run();
-
             InitializeComponent();
             orderManager = new OrderManager();
         }
