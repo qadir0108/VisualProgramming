@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8C3C6F5B-01FB-4839-B8CE-00DCAB7B9186}</ProjectGuid>
+    <ProjectGuid>{D9ACADE8-C4C4-4CF5-AF61-C3C64FEC6E35}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>QRCode</RootNamespace>
-    <AssemblyName>QRCode</AssemblyName>
+    <RootNamespace>QRCodeApp</RootNamespace>
+    <AssemblyName>QRCodeApp</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

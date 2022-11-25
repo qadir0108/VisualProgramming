@@ -1,4 +1,4 @@
-﻿namespace QRCode
+﻿namespace QRCodeApp
 {
     partial class Form1
     {
@@ -34,9 +34,9 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(94, 72);
+            this.pictureBox1.Location = new System.Drawing.Point(261, 94);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(420, 263);
+            this.pictureBox1.Size = new System.Drawing.Size(301, 252);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
