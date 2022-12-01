@@ -11,6 +11,8 @@
 - Enumeration 
 - Exception Handling 
 
+**Winforms App First**
+
 **Chapter #16: Strings**
 - Creating String 
 - String Compare, Contains, Substring, Join
@@ -19,6 +21,8 @@
 - Parent Child Class (Shape & Rectangle) 
 - Initilize Parent class (Constructor & Function)
 - Multiple Inheritance using Interfaces
+- 12_-_Inheritance.pdf
+- 20220612_Inheritance Project
 
 **Chapter #21: Polymorphism**
 - Function Overloading 
@@ -26,8 +30,8 @@
 - Polymorphism
 
 **Chapter #23: Interfaces**
-- Transaction : ITransaction Example 
-- Goat : IAnimal Example
+- 13_-_Interfaces.pdf 
+- 20220613_Interfaces Project
 
 **Chapter #28: File IO**
 - FileStream
@@ -64,6 +68,16 @@
 - Managing Thread
 - Destroying Thread
 
+**Student Admission System**
+- UI Design
+- Class Library Project
+- Code: Student, Student Manager
+
+**QRCode App**
+- Nuget Package Managment
+
 **Order App**
 - Example Winforms App
 - Connects with SQL Server
+
+**WPF App First**
