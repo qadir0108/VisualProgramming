@@ -81,5 +81,6 @@
 - Connects with SQL Server
 
 **Language Integrated Query (LINQ)**
+- https://www.tutorialsteacher.com/linq
 
 **WPF App First**
