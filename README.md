@@ -11,7 +11,7 @@
 - Enumeration 
 - Exception Handling 
 
-**Winforms App First**
+**Windows Forms App First**
 
 **Chapter #16: Strings**
 - Creating String 
