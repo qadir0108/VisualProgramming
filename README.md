@@ -80,4 +80,6 @@
 - Example Winforms App
 - Connects with SQL Server
 
+**Language Integrated Query (LINQ)**
+
 **WPF App First**
