@@ -29,5 +29,33 @@ namespace StudentAdmissionSystem.Data
             //    Debug.WriteLine("Last : " + student.LastName);
             //}
         }
+
+        // 123
+        public Student Search(long cnic)
+        {
+            Student found = null;
+            foreach (Student student in students)
+            {
+                if (student.CNIC == cnic)
+                    found = student;
+            }
+            return found;
+        }
+
+        // 111
+        public bool Delete(long cnic)
+        {
+            // Search
+            Student found = Search(cnic);
+
+            // Delete
+            if (found == null)
+                return false;
+            else
+            {
+                students.Remove(found);
+                return true;
+            }
+        }
     }
 }
