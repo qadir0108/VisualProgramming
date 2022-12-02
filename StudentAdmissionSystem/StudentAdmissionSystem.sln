@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentAdmissionSystem", "StudentAdmissionSystem\StudentAdmissionSystem.csproj", "{AE461E26-124C-49F3-9D91-8CC798881938}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentAdmissionSystem.Data", "StudentAdmissionSystem.Data\StudentAdmissionSystem.Data.csproj", "{8B4FA3D7-51B0-4E82-ABB3-4A38D6F6F416}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{AE461E26-124C-49F3-9D91-8CC798881938}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE461E26-124C-49F3-9D91-8CC798881938}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE461E26-124C-49F3-9D91-8CC798881938}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B4FA3D7-51B0-4E82-ABB3-4A38D6F6F416}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B4FA3D7-51B0-4E82-ABB3-4A38D6F6F416}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B4FA3D7-51B0-4E82-ABB3-4A38D6F6F416}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B4FA3D7-51B0-4E82-ABB3-4A38D6F6F416}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
