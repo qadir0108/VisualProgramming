@@ -97,5 +97,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StudentAdmissionSystem.Data\StudentAdmissionSystem.Data.csproj">
+      <Project>{8B4FA3D7-51B0-4E82-ABB3-4A38D6F6F416}</Project>
+      <Name>StudentAdmissionSystem.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
