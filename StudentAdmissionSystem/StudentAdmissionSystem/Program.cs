@@ -16,7 +16,7 @@ namespace StudentAdmissionSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmRegistration());
+            Application.Run(new frmProfile());
         }
     }
 }
