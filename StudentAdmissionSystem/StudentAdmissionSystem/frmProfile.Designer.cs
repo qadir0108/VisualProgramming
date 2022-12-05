@@ -356,7 +356,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(827, 815);
+            this.ClientSize = new System.Drawing.Size(827, 835);
             this.Controls.Add(this.dgvStudents);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnSearch);
