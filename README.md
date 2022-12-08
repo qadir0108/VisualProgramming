@@ -80,6 +80,9 @@
 - Example Winforms App
 - Connects with SQL Server
 
+**Setup Project**
+https://www.advancedinstaller.com/create-msi-installer-with-visual-studio.html
+
 **Language Integrated Query (LINQ)**
 - https://www.tutorialsteacher.com/linq
 
