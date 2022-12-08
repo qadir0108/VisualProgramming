@@ -7,7 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderApp", "OrderApp\OrderA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderApp.Data", "OrderApp.Data\OrderApp.Data.csproj", "{D13508CE-A5F5-42AE-B664-5E697F55482F}"
 EndProject
-Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "OrderApp.Setup", "OrderApp.Setup\OrderApp.Setup.wixproj", "{580F8EB8-6D8C-4235-BD66-848439114A31}"
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "OrderApp.SetupWix", "OrderApp.SetupWix\OrderApp.SetupWix.wixproj", "{580F8EB8-6D8C-4235-BD66-848439114A31}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "OrderApp.Setup", "OrderApp.Setup\OrderApp.Setup.vdproj", "{119A35FB-C9A5-437F-A662-7D2073F5898E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{580F8EB8-6D8C-4235-BD66-848439114A31}.Release|Any CPU.Build.0 = Release|x86
 		{580F8EB8-6D8C-4235-BD66-848439114A31}.Release|x86.ActiveCfg = Release|x86
 		{580F8EB8-6D8C-4235-BD66-848439114A31}.Release|x86.Build.0 = Release|x86
+		{119A35FB-C9A5-437F-A662-7D2073F5898E}.Debug|Any CPU.ActiveCfg = Debug
+		{119A35FB-C9A5-437F-A662-7D2073F5898E}.Debug|x86.ActiveCfg = Debug
+		{119A35FB-C9A5-437F-A662-7D2073F5898E}.Release|Any CPU.ActiveCfg = Release
+		{119A35FB-C9A5-437F-A662-7D2073F5898E}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
