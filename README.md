@@ -33,12 +33,6 @@
 - 13_-_Interfaces.pdf 
 - 20220613_Interfaces Project
 
-**Chapter #28: File IO**
-- FileStream
-- StreamReader & StreamWriter
-- BinaryReader & BinaryWriter
-- DirectoryInfo & FileInfo
-
 **Chapter #35: Collections**
 - ArrayList
 - HashTable
@@ -52,16 +46,22 @@
 - Class Library Project
 - Code: Student, Student Manager
 
+**Chapter #28: File IO**
+- FileStream
+- StreamReader & StreamWriter
+- BinaryReader & BinaryWriter
+- DirectoryInfo & FileInfo
+
 **Chapter #33: Delegates**
 - Delegate
 - Delegate Multicast
 - Delegate Usage
 - System Timer
 
-**Chapter #33: Events**
-- Delegate & Event
-- Windows Form EventHandler
-- Winforms App First
+~~**Chapter #34: Events**~~
+~~- Delegate & Event~~
+~~- Windows Form EventHandler~~
+~~- Winforms App First~~
 
 **Chapter #36: Generics**
 - Generic Class
