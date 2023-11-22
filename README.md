@@ -39,6 +39,19 @@
 - BinaryReader & BinaryWriter
 - DirectoryInfo & FileInfo
 
+**Chapter #35: Collections**
+- ArrayList
+- HashTable
+- SortedList
+- Stack
+- Queue
+- BitArray
+
+**Student Admission System**
+- UI Design
+- Class Library Project
+- Code: Student, Student Manager
+
 **Chapter #33: Delegates**
 - Delegate
 - Delegate Multicast
@@ -50,14 +63,6 @@
 - Windows Form EventHandler
 - Winforms App First
 
-**Chapter #35: Collections**
-- ArrayList
-- HashTable
-- SortedList
-- Stack
-- Queue
-- BitArray
-
 **Chapter #36: Generics**
 - Generic Class
 - Generic Function
@@ -68,13 +73,10 @@
 - Managing Thread
 - Destroying Thread
 
-**Student Admission System**
-- UI Design
-- Class Library Project
-- Code: Student, Student Manager
-
 **QRCode App**
 - Nuget Package Managment
+
+**Bzu Shop Database**
 
 **Order App**
 - Example Winforms App
