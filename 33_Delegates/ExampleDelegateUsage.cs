@@ -25,8 +25,7 @@ namespace _33_Delegates
         //this method prints to a file
         public static void WriteToFile(string s)
         {
-            fs = new FileStream("message.txt",
-            FileMode.Append, FileAccess.Write);
+            fs = new FileStream("message.txt", FileMode.Append, FileAccess.Write);
             sw = new StreamWriter(fs);
             sw.WriteLine(s);
             sw.Flush();

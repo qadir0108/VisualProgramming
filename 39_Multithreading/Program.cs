@@ -16,6 +16,9 @@ namespace _39_Multithreading
             //ExampleCreate exampleCreate = new ExampleCreate();
             //exampleCreate.Run();
 
+            //ExampleCreateMultiple multiple = new ExampleCreateMultiple();
+            //multiple.Run();
+
             //ExampleManage exampleManage = new ExampleManage();
             //exampleManage.Run();
 
