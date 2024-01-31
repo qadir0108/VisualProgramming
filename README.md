@@ -85,7 +85,9 @@
 **Setup Project**
 - https://www.advancedinstaller.com/create-msi-installer-with-visual-studio.html
 
+**WPF App First**
+
+**ORM - Object Relationship Mapping**
+
 **Language Integrated Query (LINQ)**
 - https://www.tutorialsteacher.com/linq
-
-**WPF App First**
