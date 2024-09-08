@@ -1,4 +1,4 @@
-[![BZU](https://bzu.edu.pk/images/logo1.png)](https://www.bzu.edu.pk)
+<a href="https://www.bzu.edu.pk"><img src="https://bzu.edu.pk/assets/images/logo.png" width="100" height="100" /></a>
 
 # Visual Programming
  For students to understand Visual Programming in C#
