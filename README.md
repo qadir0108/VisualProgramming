@@ -11,6 +11,9 @@
 - Enumeration 
 - Exception Handling 
 
+**Programming Revision**
+- Programming Project
+
 **Windows Forms App First**
 
 **Chapter #16: Strings**
