@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _20220612_Inheritance.With
+namespace Inheritance.With
 {
     public class Example
     {

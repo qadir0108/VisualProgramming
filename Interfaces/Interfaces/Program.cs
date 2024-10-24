@@ -1,7 +1,6 @@
-﻿using _20220613_Interfaces.Interfaces;
-using System;
+﻿using System;
 
-namespace _20220613_Interfaces
+namespace Interfaces
 {
     internal class Program
     {

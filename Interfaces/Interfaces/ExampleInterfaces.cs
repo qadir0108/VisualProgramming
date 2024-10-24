@@ -1,4 +1,4 @@
-﻿namespace _20220613_Interfaces.Interfaces
+﻿namespace Interfaces
 {
     public interface IPerson
     {

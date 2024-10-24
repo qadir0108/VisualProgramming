@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{8B5F6E87-A5F0-49E9-8155-4372D9D4727D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_20220612_Inheritance</RootNamespace>
-    <AssemblyName>20220612_Inheritance</AssemblyName>
+    <RootNamespace>Inheritance</RootNamespace>
+    <AssemblyName>Inheritance</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,9 +45,9 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WithInheritanceConstructor\Example.cs" />
+    <Compile Include="WithConstructor\Example.cs" />
     <Compile Include="Without\WithoutInheritance.cs" />
-    <Compile Include="WithInheritanceConstructor\WithInheritanceConstructor.cs" />
+    <Compile Include="WithConstructor\WithConstructor.cs" />
     <Compile Include="With\Example.cs" />
     <Compile Include="With\WithInheritance.cs" />
   </ItemGroup>

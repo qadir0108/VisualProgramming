@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{6554DA66-DD98-404D-B265-665F2FFE8B42}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_20220613_Interfaces</RootNamespace>
-    <AssemblyName>20220613_Interfaces</AssemblyName>
+    <RootNamespace>Interfaces</RootNamespace>
+    <AssemblyName>Interfaces</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,9 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interfaces\Example.cs" />
-    <Compile Include="Interfaces\ExampleClasses.cs" />
-    <Compile Include="Interfaces\ExampleInterfaces.cs" />
+    <Compile Include="Example.cs" />
+    <Compile Include="ExampleClasses.cs" />
+    <Compile Include="ExampleInterfaces.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

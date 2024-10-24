@@ -20,7 +20,7 @@ namespace ConsoleAppFirst
             {
                 Console.WriteLine("An Error has been occured.");
                 Console.WriteLine(ex.ToString());
-                //throw ex;
+                throw ex;
             }
             finally
             {

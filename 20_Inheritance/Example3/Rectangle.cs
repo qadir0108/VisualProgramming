@@ -13,6 +13,7 @@ namespace _20_Inheritance.Example3
         {
             return (width * height);
         }
+
         public int getCost(int area)
         {
             return area * 70;

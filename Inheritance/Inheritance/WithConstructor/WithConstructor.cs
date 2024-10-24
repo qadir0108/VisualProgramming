@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace _20220613_Interfaces.Interfaces
+namespace Inheritance.WithConstructor
 {
-    public class Person : IPerson
+    public class Person
     {
         public String CNIC { get; set; }
         public String Name { get; set; }
@@ -13,19 +13,14 @@ namespace _20220613_Interfaces.Interfaces
             Name = name;
         }
 
-        public virtual void Show()
+        public void Show()
         {
             Console.WriteLine("CNIC: \t\t" + CNIC);
             Console.WriteLine("Name: \t\t" + Name);
         }
-
-        public void Register()
-        {
-            throw new NotImplementedException();
-        }
     }
 
-    public class Student : Person, IStudent
+    public class Student : Person
     {
         public int RollNumber { get; set; }
         public int Marks { get; set; }
@@ -36,20 +31,15 @@ namespace _20220613_Interfaces.Interfaces
             Marks = marks;
         }
 
-        public override void Show()
+        public void Show()
         {
             base.Show();
             Console.WriteLine("Roll Number: \t" + RollNumber);
             Console.WriteLine("Marks: \t\t" + Marks);
         }
-
-        public void Studies()
-        {
-            throw new NotImplementedException();
-        }
     }
 
-    public class Teacher : Person, ITeacher
+    public class Teacher : Person
     {
         public int EmployeeCode { get; set; }
         public String Subject { get; set; }
@@ -60,48 +50,28 @@ namespace _20220613_Interfaces.Interfaces
             Subject = subject;
         }
 
-        public override void Show()
+        public void Show()
         {
             base.Show();
             Console.WriteLine("Employee Code: \t" + EmployeeCode);
             Console.WriteLine("Subject: \t" + Subject);
         }
 
-        public void Teaches()
-        {
-            throw new NotImplementedException();
-        }
     }
 
-    public class TeachingAssistant : Person, ITeachingAssistant
+    public class Clerk : Person
     {
-        public String Level { get; set; }
+        public String Duty { get; set; }
 
-        public TeachingAssistant(string cNIC, string name, string level) : base(cNIC, name)
+        public Clerk(string cNIC, string name, string duty) : base(cNIC, name)
         {
-            Level = level;
+            Duty = duty;
         }
 
-        public override void Show()
+        public void Show()
         {
-            Console.WriteLine("Teaching Assistant Data");
             base.Show();
-            Console.WriteLine("Level: \t\t" + Level);
-        }
-
-        public void Studies()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Teaches()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void MarksAssignments()
-        {
-            throw new NotImplementedException();
+            Console.WriteLine("Duty: \t" + Duty);
         }
     }
 }

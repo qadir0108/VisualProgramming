@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _20220612_Inheritance.WithInheritanceConstructor
+namespace Inheritance.WithConstructor
 {
     public class Example
     {

@@ -38,5 +38,18 @@ namespace ConsoleAppFirst
 
             Console.ReadLine();
         }
+
+        /// <summary>
+        /// Real-world example 
+        /// </summary>
+        public void CalculateResult()
+        {
+            int? marks = null;
+            if (marks == null)
+            {
+                marks = int.Parse(Console.ReadLine());
+            }
+            Console.WriteLine(marks ?? 50);
+        }
     }
 }

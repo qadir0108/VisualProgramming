@@ -24,6 +24,10 @@ namespace _16_Strings
 
             //ExampleJoin exampleJoin = new ExampleJoin();
             //exampleJoin.Run();
+
+            // ExampleCase exampleCase = new ExampleCase();
+            // exampleCase.Run();
+
         }
     }
 }

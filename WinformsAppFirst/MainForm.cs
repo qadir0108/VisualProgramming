@@ -22,7 +22,11 @@ namespace WinformsAppFirst
             // Check Login Username & Password
             if(txtUserName.Text == "admin" && txtPassword.Text == "admin")
             {
-                lblMessage.Text = "Welcome " + txtUserName.Text + "!";
+                //lblMessage.Text = "Welcome " + txtUserName.Text + "!";
+
+                Dashboard obj = new Dashboard();
+                obj.Show();
+                this.Hide();
             }
             else
             {

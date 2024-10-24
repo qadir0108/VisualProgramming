@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExampleCase.cs" />
     <Compile Include="ExampleCompare.cs" />
     <Compile Include="ExampleContains.cs" />
     <Compile Include="ExampleCreate.cs" />

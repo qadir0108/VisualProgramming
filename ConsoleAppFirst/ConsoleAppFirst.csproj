@@ -48,6 +48,7 @@
     <Compile Include="ExampleExceptions.cs" />
     <Compile Include="ExampleNullable.cs" />
     <Compile Include="ExampleTypeConversion.cs" />
+    <Compile Include="InvalidPinException.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

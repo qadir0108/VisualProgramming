@@ -10,7 +10,9 @@ namespace _20_Inheritance.Example2
     {
         private double cost;
         public Tabletop(double l, double w) : base(l, w)
-        { }
+        { 
+        }
+
         public double GetCost()
         {
             double cost;

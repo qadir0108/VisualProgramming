@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _20220613_Interfaces.Interfaces
+namespace Interfaces
 {
     public class Example
     {
@@ -25,7 +25,7 @@ namespace _20220613_Interfaces.Interfaces
             Person person4 = new TeachingAssistant("CNIC-444", "Teaching Assistant 444", "Senior");
             person4.Show();
 
-            // Interface MAGIC is this
+            // Interface MAGIC is HERE
             Process(person1);
             Process(person3);
         }

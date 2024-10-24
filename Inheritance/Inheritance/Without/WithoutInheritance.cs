@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _20220612_Inheritance.Without
+namespace Inheritance.Without
 {
     public class Studuent
     {

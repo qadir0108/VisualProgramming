@@ -21,8 +21,8 @@
 - Parent Child Class (Shape & Rectangle) 
 - Initilize Parent class (Constructor & Function)
 - Multiple Inheritance using Interfaces
-- 12_-_Inheritance.pdf
-- 20220612_Inheritance Project
+- Inheritance.pdf
+- Inheritance Project
 
 **Chapter #21: Polymorphism**
 - Function Overloading 
@@ -30,8 +30,8 @@
 - Polymorphism
 
 **Chapter #23: Interfaces**
-- 13_-_Interfaces.pdf 
-- 20220613_Interfaces Project
+- Interfaces.pdf 
+- Interfaces Project
 
 **Chapter #35: Collections**
 - ArrayList

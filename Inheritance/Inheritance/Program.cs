@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _20220612_Inheritance
+namespace Inheritance
 {
     internal class Program
     {
@@ -9,7 +9,7 @@ namespace _20220612_Inheritance
             //With.Example withExample = new With.Example();
             //withExample.Run();
 
-            WithInheritanceConstructor.Example withContructorExample = new WithInheritanceConstructor.Example();
+            WithConstructor.Example withContructorExample = new WithConstructor.Example();
             withContructorExample.Run();
 
             Console.ReadKey();

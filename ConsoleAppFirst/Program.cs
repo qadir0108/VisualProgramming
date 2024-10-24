@@ -11,8 +11,8 @@ namespace ConsoleAppFirst
         static void Main(string[] args)
         {
             /* my first program in C# */
-            Console.WriteLine("Welcome to C#");
-            Console.ReadKey();
+            //Console.WriteLine("Welcome to C#");
+            //Console.ReadKey();
 
             //ExampleClass obj1 = new ExampleClass();
             //obj1.Run();
@@ -29,6 +29,14 @@ namespace ConsoleAppFirst
 
             //ExampleExceptions exampleExceptions = new ExampleExceptions();
             //exampleExceptions.Run();
+
+            //// Custom Exceptions
+            //string cardnumber = "12345678";
+            //int pin = 1111;
+            //if (cardnumber != "12345678" && pin != 1111)
+            //    throw new InvalidPinException();
+
+            Console.ReadLine();
         }
     }
 }
